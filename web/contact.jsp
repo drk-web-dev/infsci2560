@@ -1,10 +1,13 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <t:layout>
     <jsp:body>
-        <div class="page-header">
-          <h1>Sticky footer with fixed navbar</h1>
-        </div>
-        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
-        <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+        <p class="lead">
+            Brian J. Kolowitz DSc, MSc, MBA<br/>
+            Department of Information Science and Telecommunications<br/>
+            School of Information Sciences<br/>
+            University of Pittsburgh<br/>
+            Pittsburgh, PA 15260<br/>
+            <a href='mailto:kolowitz@pitt.edu'>kolowitz@pitt.edu</a>
+        </p>
     </jsp:body>
 </t:layout>
