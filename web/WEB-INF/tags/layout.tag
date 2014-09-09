@@ -16,32 +16,32 @@
   <body onload='initPage()'>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">INFSCI 2560</a>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">INFSCI 2560</a>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.jsp" data-target="#navbarCollapse" data-toggle="collapse">Home</a></li>
+                    <li><a href="syllabus.jsp" data-target="#navbarCollapse" data-toggle="collapse">Syllabus</a></li>
+                    <li><a href="slides.jsp" data-target="#navbarCollapse" data-toggle="collapse">Slides</a></li>
+                    <li><a href="#software" data-target="#navbarCollapse" data-toggle="collapse">Software</a></li>
+                    <li><a href="otherLinks.jsp" data-target="#navbarCollapse" data-toggle="collapse">Other Links</a></li>
+                    <li><a href="http://www.pitt.edu/~kolowitz/#/contact" data-target="#navbarCollapse" data-toggle="collapse">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.jsp">Home</a></li>
-            <li><a href="syllabus.jsp">Syllabus</a></li>
-            <li><a href="slides.jsp">Slides</a></li>
-            <li><a href="#examples">Examples</a></li>
-            <li><a href="#otherResources">Other Resources</a></li>
-            <li><a href="#software">Software</a></li>
-            <li><a href="#zipfiles">Zip Files</a></li>
-            <li><a href="contact.jsp">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
+    </nav>
+    
     <!-- Begin page content -->
     <div id='body' class='container'>
         <jsp:doBody/>
